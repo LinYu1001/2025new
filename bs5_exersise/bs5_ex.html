@@ -14,7 +14,7 @@
       background: linear-gradient(to bottom, #56b000, #2a8700);
       color: white;
       padding: 20px 0;
-      text-align: center;
+      text-align: left;
     }
     nav a {
       color: white;
@@ -36,7 +36,7 @@
       object-fit: cover;
     }
     .feature-box {
-      text-align: center;
+      text-align: left;
       padding: 20px;
     }
     .feature-box img {
@@ -44,7 +44,7 @@
       margin-bottom: 10px;
     }
     footer {
-      background: linear-gradient(to top,  0, #56b000);
+      background: linear-gradient(to top, #2a8700, #56b000);
       color: white;
       padding: 30px 0;
     }
@@ -61,15 +61,22 @@
     <p>Small company slogan goes here</p>
   </header>
 
-  <table class="table table-borderless text-center bg-success text-white" style="margin: 0 auto; width: 80%; border-radius: 10px;">
-    <tr>
-      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Home</a></td>
-      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Blog</a></td>
-      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Gallery</a></td>
-      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Projects</a></td>
-      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Contact</a></td>
-    </tr>
-  </table>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container mt-4">
     <div class="main-image mb-5">
@@ -80,17 +87,20 @@
       <div class="col-md-4 feature-box">
         <img src="images/img1.png" alt="Idea">
         <h5>Your Options</h5>
-        <p>Donec interdum dignissim risus et vestibulum.</p>
+        <p>Cras handreeit est nec ibero ornare sagittis. 
+            Donec interdum dignissim risus et vestibulum.</p>
       </div>
       <div class="col-md-4 feature-box">
         <img src="images/img2.png" alt="Clock">
         <h5>Company News</h5>
-        <p>Donec eget nisi id magna tempor laoreet.</p>
+        <p>Donec interdum dignissim risus at vestibulum. 
+            Donec eget nisi id magna tempor laoreet.</p>
       </div>
       <div class="col-md-4 feature-box">
         <img src="images/img3.png" alt="Question">
         <h5>Have a Question?</h5>
-        <p>Donec interdum dignissim risus et vestibulum.</p>
+        <p>Cras handreeit est nec ibero ornare sagittis.
+            Donec interdum dignissim risus et vestibulum.</p>
       </div>
     </div>
 
@@ -143,7 +153,8 @@
           </ul>
         </div>
       </div>
-      <p class="text-center mt-4">Website Templates | Privacy Policy | Terms of Use</p>
+      <p class="text-center mt-4">Website Templates<p></p>
+      <p class="text-center mt-4">Privacy Policy | Terms of Use | CSS<p></p>
     </div>
   </footer>
 
