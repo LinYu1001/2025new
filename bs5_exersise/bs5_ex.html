@@ -1,145 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeCSS JQueryBlock</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body { background: #f8f9fa; }
-      header { background: linear-gradient(#4CAF50, #2e7d32); color: white; padding: 20px 0; }
-      header h1 { margin: 0; font-size: 1.5rem; }
-      header p { margin: 0; font-size: 0.9rem; }
-      .info-box { text-align: center; padding: 20px; }
-      .info-box i { font-size: 40px; color: #4CAF50; margin-bottom: 10px; }
-      footer { background: #4CAF50; color: white; padding: 30px 0; }
-      footer h5 { font-size: 1.1rem; }
-      footer ul { list-style: none; padding: 0; }
-      footer ul li { margin-bottom: 5px; }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeCSS jQueryBlock</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: linear-gradient(to bottom, #56b000, #2a8700);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .navbar {
+      background-color: #3aa000;
+    }
+    .navbar-nav .nav-link:hover {
+      background-color: #2a8700;
+      border-radius: 5px;
+    }
+    .main-image img {
+      border: 5px solid #ddd;
+      border-radius: 10px;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .feature-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .feature-box img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: linear-gradient(to top,  0, #56b000);
+      color: white;
+      padding: 30px 0;
+    }
+    footer h5 {
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Header -->
-    <header class="text-center">
-      <div class="container">
-        <h1>FREECSS_JQUERYBLOCK</h1>
-        <p>SMALL COMPANY SLOGAN GOES HERE</p>
-      </div>
-    </header>
+  <header>
+    <h1>FREECSS_JQUERYBLOCK</h1>
+    <p>Small company slogan goes here</p>
+  </header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <div class="container">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <table class="table table-borderless text-center bg-success text-white" style="margin: 0 auto; width: 80%; border-radius: 10px;">
+    <tr>
+      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Home</a></td>
+      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Blog</a></td>
+      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Gallery</a></td>
+      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Projects</a></td>
+      <td><a href="#" class="text-success text-uppercase fw-bold text-decoration-none px-3">Contact</a></td>
+    </tr>
+  </table>
 
-    <!-- Carousel -->
-    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+  <div class="container mt-4">
+    <div class="main-image mb-5">
+      <img src="images/header4.jpg" alt="Main Image">
     </div>
 
-    <!-- Info Section -->
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-md-4 info-box">
-          <i class="bi bi-lightbulb"></i>
-          <h5>Your Options</h5>
-          <p>Donec interdum dignissim risus et vestibulum.</p>
-        </div>
-        <div class="col-md-4 info-box">
-          <i class="bi bi-clock"></i>
-          <h5>Company News</h5>
-          <p>Donec eget nisl id magna tempor laoreet.</p>
-        </div>
-        <div class="col-md-4 info-box">
-          <i class="bi bi-question-circle"></i>
-          <h5>Have a Question?</h5>
-          <p>Donec interdum dignissim risus et vestibulum.</p>
-        </div>
+    <div class="row text-center mb-4">
+      <div class="col-md-4 feature-box">
+        <img src="images/img1.png" alt="Idea">
+        <h5>Your Options</h5>
+        <p>Donec interdum dignissim risus et vestibulum.</p>
+      </div>
+      <div class="col-md-4 feature-box">
+        <img src="images/img2.png" alt="Clock">
+        <h5>Company News</h5>
+        <p>Donec eget nisi id magna tempor laoreet.</p>
+      </div>
+      <div class="col-md-4 feature-box">
+        <img src="images/img3.png" alt="Question">
+        <h5>Have a Question?</h5>
+        <p>Donec interdum dignissim risus et vestibulum.</p>
       </div>
     </div>
 
-    <!-- Content Section -->
-    <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Quisque dignissim</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" width="70" class="mb-2" alt="Avatar">
+        <p>Praesent eu ligula 
+           Sit amet, eleifend adipiscing.</p>
+        <p>Proin cursus 
+           Neque porro quisquahmest,qui dolorem.</p>
+        <p>Cras interdum 
+            Quis autem vel eum lure reprehenderit.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4>Praesent eu ligula lacus!</h4>
+        <p>Cras interdum placerat ante, sed mattis leo tempus eget. Curabitur non nisi quis velit lobortis scelerisque.</p>
+        <ul>
+          <li>At vero eos et accusamus justo</li>
+          <li>Codo dignissimos ducimus blanditiis</li>
+          <li>Praesentium voluptatum deleniti</li>
+          <li>MOLES EXCEUTPTURI SINT OCCAECATI</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5">
+    <div class="container text-center text-md-start">
       <div class="row">
         <div class="col-md-4">
-          <h5>Quisque dignissim</h5>
-          <p>Praesent eu ligula sit amet...</p>
+          <h5>Recent Posts</h5>
+          <p>Suspending rutrum interdum lacinia. Donec luctus pulvinar mauris.</p>
         </div>
-        <div class="col-md-8">
-          <h5>Praesent eu ligula lacus!</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-          <ul>
-            <li>Aliquo esrt accumsan listo</li>
-            <li>Codo dignissim dicumus blandit</li>
-            <li>Praesentium volutpat deeni</li>
-            <li>Molestias explicatibus sint occaecati</li>
+        <div class="col-md-4">
+          <h5>Share with Others</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Subscribe to Blog</a></li>
+            <li><a href="#" class="text-white">Be a fan on Facebook</a></li>
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Useful Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Lorem Ipsum Dolor</a></li>
+            <li><a href="#" class="text-white">Maccenas in turpis</a></li>
+            <li><a href="#" class="text-white">Nunc vel metus vel</a></li>
           </ul>
         </div>
       </div>
+      <p class="text-center mt-4">Website Templates | Privacy Policy | Terms of Use</p>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Recent posts</h5>
-            <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-              <li>Post 3</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Share with Others</h5>
-            <ul>
-              <li>Subscribe to blog</li>
-              <li>Be fan on Facebook</li>
-              <li>Follow on Twitter</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Useful Resources</h5>
-            <ul>
-              <li>Lorem ipsum dolor</li>
-              <li>Maccenas in turpis</li>
-              <li>Nam convallis metus vel</li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-center mt-3">
-          <small>Website Templates | Privacy Policy | Terms of Use</small>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
