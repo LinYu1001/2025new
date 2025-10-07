@@ -6,35 +6,58 @@
   <title>FreeCSS jQueryBlock</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    /* Tổng thể */
     body {
       background: #f8f9fa;
       font-family: Arial, sans-serif;
+      color: #333;
     }
+
+    /* Header */
     header {
       background: linear-gradient(to bottom, #56b000, #2a8700);
-      color: white;
-      padding: 20px 0;
-      text-align: left;
+      color: #fff;
+      padding: 40px 60px;
     }
-    nav a {
-      color: white;
-      text-transform: uppercase;
+    header h1 {
+      font-size: 22px;
       font-weight: bold;
+      margin: 0;
     }
+    header p {
+      font-size: 12px;
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* Navbar */
     .navbar {
       background-color: #3aa000;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: left;
+      font-weight: bold;
+      padding: 5px 15px;
     }
     .navbar-nav .nav-link:hover {
       background-color: #2a8700;
-      border-radius: 5px;
-    }
-    .main-image img {
-      border: 5px solid #ddd;
       border-radius: 10px;
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
     }
+
+    /* Hình chính */
+    .main-image img {
+      border: 10px solid #fff;
+      border-radius: 5px;
+      width: 100%;
+      object-fit: cover;
+      max-height: 500px;
+    }
+
+    /* Các khối tính năng */
     .feature-box {
       text-align: left;
       padding: 20px;
@@ -43,24 +66,66 @@
       width: 60px;
       margin-bottom: 10px;
     }
+    .feature-box h5 {
+      color: #3aa000;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .feature-box p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Nội dung chính */
+    h4 {
+      color: #3aa000;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Footer */
     footer {
       background: linear-gradient(to top, #2a8700, #56b000);
-      color: white;
-      padding: 30px 0;
+      color: #fff;
+      padding: 40px 0;
+      font-size: 14px;
     }
     footer h5 {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #fff;
       padding-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>FREECSS_JQUERYBLOCK</h1>
     <p>Small company slogan goes here</p>
   </header>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -78,43 +143,38 @@
     </div>
   </nav>
 
+  <!-- Hình chính -->
   <div class="container mt-4">
     <div class="main-image mb-5">
       <img src="images/header4.jpg" alt="Main Image">
     </div>
 
-    <div class="row text-center mb-4">
+    <!-- 3 cột giới thiệu -->
+    <div class="row mb-4">
       <div class="col-md-4 feature-box">
-        <img src="images/img1.png" alt="Idea">
         <h5>Your Options</h5>
-        <p>Cras handreeit est nec ibero ornare sagittis. 
-            Donec interdum dignissim risus et vestibulum.</p>
+        <img src="images/img1.png" alt="Idea">
+        <p>Cras hendrerit est nec libero ornare sagittis. Donec interdum dignissim risus et vestibulum.</p>
       </div>
       <div class="col-md-4 feature-box">
-        <img src="images/img2.png" alt="Clock">
         <h5>Company News</h5>
-        <p>Donec interdum dignissim risus at vestibulum. 
-            Donec eget nisi id magna tempor laoreet.</p>
+        <img src="images/img2.png" alt="Clock">
+        <p>Donec interdum dignissim risus at vestibulum. Donec eget nisi id magna tempor laoreet.</p>
       </div>
       <div class="col-md-4 feature-box">
-        <img src="images/img3.png" alt="Question">
         <h5>Have a Question?</h5>
-        <p>Cras handreeit est nec ibero ornare sagittis.
-            Donec interdum dignissim risus et vestibulum.</p>
+        <img src="images/img3.png" alt="Question">
+        <p>Cras hendrerit est nec libero ornare sagittis. Donec interdum dignissim risus et vestibulum.</p>
       </div>
     </div>
 
+    <!-- Nội dung chính -->
     <div class="row">
       <div class="col-md-6">
         <h4>Quisque dignissim</h4>
-        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" width="70" class="mb-2" alt="Avatar">
-        <p>Praesent eu ligula 
-           Sit amet, eleifend adipiscing.</p>
-        <p>Proin cursus 
-           Neque porro quisquahmest,qui dolorem.</p>
-        <p>Cras interdum 
-            Quis autem vel eum lure reprehenderit.
-        </p>
+        <p><strong>Praesent eu ligula</strong> — sit amet, eleifend adipiscing.</p>
+        <p><strong>Proin cursus</strong> — neque porro quisquam est, qui dolorem.</p>
+        <p><strong>Cras interdum</strong> — quis autem vel eum iure reprehenderit.</p>
       </div>
       <div class="col-md-6">
         <h4>Praesent eu ligula lacus!</h4>
@@ -123,41 +183,38 @@
           <li>At vero eos et accusamus justo</li>
           <li>Codo dignissimos ducimus blanditiis</li>
           <li>Praesentium voluptatum deleniti</li>
-          <li>MOLES EXCEUTPTURI SINT OCCAECATI</li>
+          <li>Molestiae excepturi sint occaecati</li>
         </ul>
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="mt-5">
-    <div class="container text-center text-md-start">
-      <div class="row">
+    <div class="container">
+      <div class="row text-center text-md-start">
         <div class="col-md-4">
           <h5>Recent Posts</h5>
-          <p>Suspending rutrum interdum lacinia. Donec luctus pulvinar mauris.</p>
+          <p>Suspending rutrum interdum lacinia. Donec luctus pulvinar mauris, ac vulputate nunc.</p>
         </div>
         <div class="col-md-4">
           <h5>Share with Others</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Subscribe to Blog</a></li>
-            <li><a href="#" class="text-white">Be a fan on Facebook</a></li>
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#">Subscribe to Blog</a></li>
+            <li><a href="#">Be a Fan on Facebook</a></li>
+            <li><a href="#">Follow on Twitter</a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5>Useful Resources</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Lorem Ipsum Dolor</a></li>
-            <li><a href="#" class="text-white">Maccenas in turpis</a></li>
-            <li><a href="#" class="text-white">Nunc vel metus vel</a></li>
+            <li><a href="#">Lorem Ipsum Dolor</a></li>
+            <li><a href="#">Maccenas in Turpis</a></li>
+            <li><a href="#">Nunc Vel Metus Vel</a></li>
           </ul>
         </div>
       </div>
-      <p class="text-center mt-4">Website Templates<p></p>
-      <p class="text-center mt-4">Privacy Policy | Terms of Use | CSS<p></p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+      <div class="footer-bottom mt-4">
+        <p>Website Templates</p>
+        <p>Privacy Policy | Terms of Use | CSS</p>
+      </div>
