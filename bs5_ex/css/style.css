@@ -7,23 +7,67 @@ body {
   color: orange;
 }
 
+/* Header */
 .flame {
   width: 120px;
 }
 
+/* Login box */
 .login-box {
-  width: 200px;
+  width: 220px;
 }
 
+/* Navbar hover */
 .navbar-nav .nav-link:hover {
   color: #fff !important;
   text-shadow: 0 0 8px orange;
 }
 
+/* Section giới thiệu */
 main .bg-secondary {
   background-color: #222 !important;
 }
 
+/* Footer */
 footer {
   border-top: 1px solid #333;
+}
+
+/* Cột dữ liệu (info-box) */
+.info-box {
+  background-color: #222;
+  border: 2px solid orange;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,165,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 180px;
+}
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,165,0,0.5);
+}
+
+/* Ảnh phượng hoàng ở góc trái đè lên column */
+.corner-img {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 180px;
+  opacity: 0.9;
+  z-index: 10;
+  pointer-events: none; /* để không che phần click */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-box {
+    position: static;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .corner-img {
+    width: 100px;
+    top: -15px;
+    left: -15px;
+  }
 }
