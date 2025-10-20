@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.flame {
+  width: 120px;
+}
+
+.login-box {
+  width: 220px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px orange;
+}
+
+main .bg-secondary {
+  background-color: #222 !important;
+}
+
+footer {
+  border-top: 1px solid #333;
+}
