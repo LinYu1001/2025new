@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #1a1a1a;
+  background: #060404;
 }
 
 .text-orange {
@@ -8,9 +8,9 @@ body {
 }
 
 .phoenix-img {
-  width: 180px;
+  width: 430px;
   top: -20px;
-  left: -10px;
+  left: -20px;
   z-index: 10;
 }
 
@@ -34,4 +34,32 @@ main h5 {
 
 footer {
   border-top: 1px solid #333;
+}
+
+.custom-dark {
+  background-color: #000;      /* nền đen */
+  color: #ccc;                 /* chữ trắng xám */
+  border: 1px solid #444;      /* nếu muốn viền nhẹ */
+}
+
+.custom-dark {
+  background-color: #000;   /* nền đen */
+  color: #ccc;              /* chữ trắng xám */
+  border: 1px solid #444;   /* viền nhẹ để phân tách */
+}
+
+.custom-dark:hover {
+  background-color: #222;   /* hover nền đậm hơn */
+  color: #fff;              /* hover chữ trắng sáng */
+}
+
+.custom-dark {
+  background-color: #000;
+  color: #ccc;
+  border: 1px solid #444;
+}
+
+.custom-dark:hover {
+  background-color: #222;
+  color: #fff;
 }
