@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background: #060404;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
 
 .text-orange {
