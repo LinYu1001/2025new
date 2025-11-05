@@ -1,0 +1,24 @@
+{
+  "name": "2025new",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/LinYu1001/2025new#readme",
+  "bugs": {
+    "url": "https://github.com/LinYu1001/2025new/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinYu1001/2025new.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
